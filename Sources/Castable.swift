@@ -20,7 +20,8 @@ extension Castable {
 }
 
 extension String: Castable {}
-extension Int: Castable {}
-extension Double: Castable {}
-extension Bool: Castable {}
+// overrides of decode() in another module aren't called from this module...
+//extension Int: Castable {}
+//extension Double: Castable {}
+//extension Bool: Castable {}
 
